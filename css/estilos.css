@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* Variables------------- */
+
+:root{
+--green-color:#7ACC2D;
+--white-color:white;
+--black-color:#313337;
+/* tipografia */
+--normal:12px;
+/* espaciado */
+--space:10Px;
+/* box shadow */
+--box: 0px 0px 2px 1px #e6e5e9;
+}
+
+
+
+html,body{
+  padding:0px;
+  margin:0px;
+  font-size: var(--normal);
+  font-family: helvetica;
+  font-family: 'Open Sans', sans-serif;
+}
+
+label, p{
+  font-size: var(--normal);
+}
+
+
+
+
+nav{
+  display:flex;
+  background-color: var(--green-color);
+  padding:var(--space);
+  color:var(--white-color);
+  justify-content: space-between;
+  align-items:center;
+}
+
+
+nav ul{
+  display:flex;
+}
+
+nav li{
+  padding-left:20px;
+  list-style: none;
+}
+
+nav li a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: var(--white-color);
+}
+
+
+/* Main Secction------------------------------- */
+
+.main_section{
+  padding: 15%;
+  text-align: center;
+}
+
+.products{
+   background-image:url("../images/curve.png");
+   max-height: 50px;
+   background-size: cover;
+   background-position: center top;
+   padding: 20%;
+   display:flex;
+}
+.product{
+  padding:var(--space);
+  margin-top: -340px;
+}
+
+.product .content{
+  background-color: var(--white-color);
+  padding:15px;
+  box-shadow:var(--box);
+
+}
+
+.img_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: var(--green-color);
+  width: 100%;
+  padding:var(--space);
+  font-size: 17px;
+  color:white;
+  border:0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover {
+  background-color: #56901f;
+}
+
+/* Recomendaciones */
+h3{
+  font-size:17px;
+}
+
+.reco_images{
+  object-fit: cover;
+
+}
+
+.recomendations{
+  display:flex;
+  padding:160px 139px;
+  justify-content:space-around;
+}
+
+.reco_container{
+
+  text-align: center;
+  font-size: var(--normal);
+
+}
+
+/* Menciones */
+.mentions_title{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+ .mentions{
+  display: flex;
+  justify-content:center;
+
+}
+
+
+.mentions_container{
+
+  width: 300px;
+  height: 220px;
+  box-shadow: var(--box);
+   margin: 5px;
+   border: 10px #00000029;
+
+
+}
+
+.mentions_container h3{
+  margin: 0;
+  font-size: 20px;
+}
+
+.mentions_container p{
+  margin:5px;
+  font-size: var(--normal);
+  text-align:left;
+}
+
+
+
+.mentions_img img{
+  width: 100%;
+  height: 50%;
+
+}
+/*--------------------------------------Ventas------------------------*/
+.modulo_pago{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: 10px;
+}
+
+.modulo_pago_img{
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+
+}
+
+.data{
+  margin-top:var(--space);
+  margin-bottom: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+
+.modulo_pago .main_button{
+   padding-top: 10px;
+}
+
+/* ------footer--------- */
+
+
+
+.footer{
+  margin-top: 30px;
+  background-color:#313337;
+  height: 50px;
+
+
+}
+
+.footer_conteiner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:auto;
+
+}
+
+.footer_conteiner p{
+    font-size: var(--normal);
+    color: var(--white-color);
+    margin-left: 15px;
+}
+
+.footer_conteiner a{
+    font-size:  var(--normal);
+    color: var(--white-color);
+    margin-right: 15px;
+
+}
+
+.contact a{
+  color:var(--green-color);
+}
